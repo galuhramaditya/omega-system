@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Omega System</title>
+    <link
+      href="/assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      [vue-data] {
+        display: none;
+      }
+
+      html,
+      body {
+        background-color: #364150;
+      }
+
+      #title {
+        font-size: 36px;
+        font-weight: 300;
+        margin: 100px 0;
+      }
+
+      .card {
+        cursor: pointer;
+        box-shadow: 10px 10px 25px 0px #333;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        box-shadow: 1px 1px 10px 0px #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center text-white" id="title">
+            Omega System
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3" v-for="card in cards" vue-data>
+            <a class="card" :href="card.link" :title="card.link">
+              <img class="card-img-top" :src="card.img" alt="Card image cap" />
+              <div class="card-body text-center">
+                <h5 class="card-title m-3">{{ card.title }}</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/scripts/jquery.min.js" type="text/javascript"></script>
+    <script
+      src="/assets/scripts/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="/assets/scripts/vue.min.js" type="text/javascript"></script>
+    <script src="/app.js" type="text/javascript"></script>
+  </body>
+</html>
