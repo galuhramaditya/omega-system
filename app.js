@@ -4,17 +4,17 @@ var app = new Vue({
     cards: [
       {
         title: "Approval",
-        link: "http://system.omega.approval.loc:8080",
+        link: "http://system.omega.approval.loc",
         img: "/assets/img/Capture3.PNG"
       },
       {
         title: "Report Front Office",
-        link: "http://system.omega.front-office.loc:8080",
+        link: "http://system.omega.front-office.loc",
         img: "/assets/img/Capture1.PNG"
       },
       {
         title: "Report Back Office",
-        link: "http://system.omega.back-office.loc:8080",
+        link: "http://system.omega.back-office.loc",
         img: "/assets/img/Capture.PNG"
       }
     ]
