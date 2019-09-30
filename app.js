@@ -32,7 +32,7 @@ var app = new Vue({
         }
     },
     methods: {
-        getLink(app) {
+        url(app) {
             if (document.location.pathname.split("/").length < 3) {
                 return this.cards[app].link.vhost;
             }
